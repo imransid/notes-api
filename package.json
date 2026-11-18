@@ -1,11 +1,14 @@
 {
   "name": "notes-api",
   "version": "0.0.1",
-  "description": "",
+  "description": "Secure note-taking REST API (NestJS, MongoDB, JWT)",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -13,7 +16,8 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "lint": "oxlint src/"
+    "lint": "oxlint src/",
+    "seed": "nest build && node dist/seed"
   },
   "dependencies": {
     "@nestjs/common": "^12.0.1",
