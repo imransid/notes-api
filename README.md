@@ -33,6 +33,8 @@ The hosted API runs on Render's free tier. It sleeps when idle, so the first req
 
 ## Demo accounts
 
+These are the local seed defaults (from `.env.example` and `src/seed.ts`). The live deployment uses a different admin password, which is in the submission email. The demo users have the same password locally and live.
+
 | Role | Email | Password |
 |---|---|---|
 | admin | `admin@notes.dev` | `Admin123!` |
