@@ -1,3 +1,4 @@
+import { PartialType } from '@nestjs/swagger';
 import {
   IsArray,
   IsEmail,
@@ -32,3 +33,5 @@ export class CreateUserDto {
   @IsIn(ROLES)
   role?: Role;
 }
+
+export class UpdateUserDto extends PartialType(CreateUserDto) {}

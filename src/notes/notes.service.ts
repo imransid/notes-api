@@ -59,4 +59,8 @@ export class NotesService {
     const { deletedCount } = await this.noteModel.deleteOne({ _id: id, owner });
     if (!deletedCount) throw new NotFoundException('Note not found');
   }
+
+  deleteByOwner(owner: Types.ObjectId) {
+    return this.noteModel.deleteMany({ owner });
+  }
 }
